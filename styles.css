@@ -1,0 +1,230 @@
+html, body {
+  margin: 0;
+  background-color: #F7F7F7;
+  color: #1F1F21;
+  font-family: 'Helvetica', sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  border: 0;
+  background: none;
+  font-size: 0.8em;
+}
+
+button :hover {
+  color: #007AFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  width: 90%;
+  margin: 0 auto;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 2%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.brd {
+  border: 0px solid red
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+}
+
+.main {
+  height: 98vh;
+  padding: 10% 0;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.profile-circle {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 1%;
+}
+
+.intro {
+  font-size: 1.7em;
+  text-align: left;
+  flex: 1
+}
+
+.blue {
+  color: #007AFF;
+  margin: 0;
+}
+
+.arrow {
+  font-size: 1em;
+  padding: 5%;
+}
+
+.arrow-animate {
+  animation: bounce 0.7s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.work {
+  height: 98vh;
+  padding: 5%;
+  font-size: 1.5em;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: #1F1F21;
+  z-index: 1;
+  display: flex;
+  align-items: center
+}
+
+.close-btn {
+  color: #F7F7F7;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2%;
+  font-size: 2em;
+  z-index: 2;
+}
+
+.wiki, .happy, .tweetr {
+  left: 12%;
+  color: #F7F7F7;
+  margin: 0 auto;
+  font-size: 0.8em;
+}
+
+.responsive-img {
+  max-height: 417px;
+  margin-top: 1%;
+}
+
+.heading {
+  font-size: 1.5em;
+}
+
+.list {
+  list-style: none;
+  text-align: left;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    padding-top: 20%;
+  }
+  .intro {
+    font-size: 1.5em;
+  }
+  .list {
+    padding-left: 0;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding-top: 25%;
+  }
+  .flex {
+    width: 100%;
+  }
+  .profile-circle {
+    height: 200px;
+    width: 200px;
+  }
+  .heading {
+    font-size: 1em;
+  }
+  .list {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .flex {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .main {
+    padding-top: 35%
+  }
+  .intro {
+    font-size: 1em;
+  }
+  .close-btn {
+    font-size: 1em;
+  }
+  .wiki, .happy, .tweetr {
+    width: 95%;
+    font-size: 0.5em;
+  }
+  .responsive-img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main {
+    padding-top: 15%
+  }
+  .list {
+    font-size: 0.8em;
+  }
+}
