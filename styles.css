@@ -94,6 +94,10 @@ button :hover {
   padding: 5%;
 }
 
+.arrow-color {
+  color: black;
+}
+
 .arrow-animate {
   animation: bounce 0.7s infinite;
 }

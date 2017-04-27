@@ -5,8 +5,13 @@ $(document).ready(function() {
   		section:".section",
    		after:function() {
       },
-      scrollSpeed: 500,
+      scrollSpeed: 1000,
   	});
+
+    $(".arrow").click(function(e){
+       e.preventDefault();
+       $.scrollify.move(1);
+   });
 
 });
 
