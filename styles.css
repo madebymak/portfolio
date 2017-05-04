@@ -129,7 +129,8 @@ button :hover {
   background: #1F1F21;
   z-index: 1;
   display: flex;
-  align-items: center
+  align-items: center;
+  padding: 10%;
 }
 
 .close-btn {
@@ -143,10 +144,13 @@ button :hover {
 }
 
 .wiki, .happy, .tweetr {
-  left: 12%;
   color: #F7F7F7;
   margin: 0 auto;
   font-size: 0.8em;
+}
+
+.img-box {
+  text-align: center;
 }
 
 .responsive-img {
@@ -194,6 +198,10 @@ button :hover {
   .list {
     font-size: 0.9em;
   }
+  .modal {
+    padding: 1%;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -204,6 +212,7 @@ button :hover {
     display: block;
   }
 }
+
 
 @media only screen and (max-width: 425px) {
   .main {
