@@ -15,7 +15,19 @@ $(document).ready(function() {
 
 });
 
-  $(".modal, .close-btn, .wiki, .happy, .tweetr").hide();
+  $(".modal, .close-btn, .budget, .shopify, .wiki, .happy, .tweetr").hide();
+
+  $(".budget-btn").click(function() {
+    $(".modal").fadeToggle( function() {
+      $(".close-btn, .budget").show();
+    });
+  });
+
+  $(".shopify-btn").click(function() {
+    $(".modal").fadeToggle( function() {
+      $(".close-btn, .shopify").show();
+    });
+  });
 
   $(".wiki-btn").click(function() {
     $(".modal").fadeToggle( function() {
@@ -37,7 +49,7 @@ $(document).ready(function() {
 
   $(".close-btn").click(function() {
     $(".modal").fadeToggle("slow", function() {
-      $(".close-btn, .wiki, .happy, .tweetr").hide();
+      $(".close-btn, .budget, .shopify, .wiki, .happy, .tweetr").hide();
     });
   });
 

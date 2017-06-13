@@ -23,6 +23,14 @@ button :hover {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
 .row {
   width: 90%;
   margin: 0 auto;
@@ -143,7 +151,7 @@ button :hover {
   z-index: 2;
 }
 
-.wiki, .happy, .tweetr {
+.budget, .shopify, .wiki, .happy, .tweetr {
   color: #F7F7F7;
   margin: 0 auto;
   font-size: 0.8em;
@@ -320,8 +328,9 @@ button :hover {
   }
   .close-btn {
     font-size: 1em;
+
   }
-  .wiki, .happy, .tweetr {
+  .budget, .shopify, .wiki, .happy, .tweetr {
     width: 95%;
     font-size: 0.5em;
   }
