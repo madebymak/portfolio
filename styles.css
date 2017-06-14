@@ -337,11 +337,15 @@ a:visited {
   .responsive-img {
     width: 100%;
   }
+
+  .list {
+    font-size: 0.7em;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-
+/*
   .list {
     font-size: 0.8em;
-  }
+  }*/
 }
