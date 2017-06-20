@@ -15,7 +15,13 @@ $(document).ready(function() {
 
 });
 
-  $(".modal, .close-btn, .budget, .shopify, .wiki, .happy, .tweetr").hide();
+  $(".modal, .close-btn, .pie, .budget, .shopify, .wiki, .happy, .tweetr").hide();
+
+  $(".pie-chart-btn").click(function() {
+    $(".modal").fadeToggle( function() {
+      $(".close-btn, .pie").show();
+    });
+  });
 
   $(".budget-btn").click(function() {
     $(".modal").fadeToggle( function() {
@@ -49,7 +55,7 @@ $(document).ready(function() {
 
   $(".close-btn").click(function() {
     $(".modal").fadeToggle("slow", function() {
-      $(".close-btn, .budget, .shopify, .wiki, .happy, .tweetr").hide();
+      $(".close-btn, .pie, .budget, .shopify, .wiki, .happy, .tweetr").hide();
     });
   });
 
